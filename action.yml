@@ -1,0 +1,15 @@
+name: 'Composer run action'
+author: 'May Meow'
+description: 'Containerized environment to run composer script defined in composer.json file'
+branding:
+  icon: 'check-square'
+  color: 'blue'
+inputs:
+  composer_script:
+    description: 'Enter name of composer command from your composer file'
+    required: true
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.composer_script }}

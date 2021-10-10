@@ -8,6 +8,10 @@ inputs:
   composer_script:
     description: 'Enter name of composer command from your composer file'
     required: true
+  memory_limit:
+    description: 'Set php memory limit'
+    required: false
+    default: '1024M'
 runs:
   using: 'docker'
   image: 'Dockerfile'

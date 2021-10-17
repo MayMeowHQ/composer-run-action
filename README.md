@@ -4,6 +4,15 @@ Running any of the script from composer.json file
 
 ## Usage
 
+There are tvo different versions of PHP: 7 and 8. Prior to PHP version use action versions as follows
+
+|PHP Version|Action Version|
+|----|----|
+|PHP 7| v3.x|
+|PHP 8| v4.x|
+
+Current version of php used in action will be written in relase descriptions.
+
 add to your workflow
 
 ```yml

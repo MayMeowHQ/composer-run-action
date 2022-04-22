@@ -12,9 +12,14 @@ inputs:
     description: 'Set php memory limit'
     required: false
     default: '1024M'
+  code_path:
+    description: 'Enter path to your code. Default is .'
+    required: false
+    default: '.'
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
     - ${{ inputs.composer_script }}
     - ${{ inputs.memory_limit }}
+    - ${{ inputs.code_path }}

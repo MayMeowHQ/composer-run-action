@@ -16,6 +16,10 @@ inputs:
     description: 'Enter path to your code. Default is .'
     required: false
     default: '.'
+  php_version:
+    description: 'The PHP Version to use'
+    required: false
+    default: '8.2'
 runs:
   using: 'docker'
   image: 'Dockerfile'
@@ -23,3 +27,4 @@ runs:
     - ${{ inputs.composer_script }}
     - ${{ inputs.memory_limit }}
     - ${{ inputs.code_path }}
+    - ${{ inputs.php_version }}

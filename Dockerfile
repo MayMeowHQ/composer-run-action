@@ -1,4 +1,4 @@
-FROM ghcr.io/maymeow/php/sdk:8.3
+FROM ghcr.io/maymeow/php/sdk:8.4
 
 ADD entrypoint.sh /entrypoint.sh
 
